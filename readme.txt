@@ -2,14 +2,14 @@
 === Plugin URI: http://www.fnaticstudios.se/wow-breaking-news/ ===
 === Description: World of Warcraft Breaking News Displaying Widget ===
 === Author: StoffeTiX ===
-=== Version: 1.6 ===
+=== Version: 1.6.1 ===
 === Author URI: http://www.fnaticstudios.se/ ===
 
 Contributors: StoffeTiX
 Donate link: http://www.fnaticstudios.se/donate/
 Tags: World of Warcraft, WoW
 Requires at least: 2.8
-Tested up to: 3.0 RC3
+Tested up to: 3.0
 Stable tag: trunk 
 
 == Description ==
@@ -70,11 +70,14 @@ None yet...
 
 == Changelog ==
 
+= 1.6.1 =
+* Compability check with WordPress 3.0, working just fine!
+
 = 1.6 =
 * Swapping of some coding stuff to be more compatilbe.
 
 = 1.5 =
-* Added the possability to change server location i.e. EU server, US Server, DE Server, RU Server, ES Server and FR Server.
+* Added the possibility to change server location i.e. EU server, US Server, DE Server, RU Server, ES Server and FR Server.
 
 = 1.4 =
 * Resolved a problem with saving and displaying a ne widget title.
