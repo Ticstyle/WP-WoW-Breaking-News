@@ -3,7 +3,7 @@
 Plugin Name: WoW Breaking News
 Plugin URI: http://www.fnaticstudios.se/wow-breaking-news
 Description: World of Warcraft Breaking News Displaying Widget
-Version: 1.6.1
+Version: 1.7
 Author: StoffeTiX
 Author URI: http://www.fnaticstudios.se/
 */
@@ -13,6 +13,7 @@ function eu()
 $curl = curl_init();
 curl_setopt ($curl, CURLOPT_URL, "http://status.wow-europe.com/en/alert");
 curl_setopt($curl, CURLOPT_RETURNTRANSFER, 1);
+curl_setopt($curl, CURLOPT_BINARYTRANSFER, 1);
 
 $dataeu = curl_exec ($curl);
 curl_close ($curl);
@@ -21,7 +22,7 @@ curl_close ($curl);
 if (strlen($dataeu)<=1) { 
 echo "* There are no serveralerts at this time.".$thelink;
 } else {
-echo nl2br($dataeu);
+echo ($dataeu);
 }
 }
 
@@ -30,6 +31,7 @@ function us()
 $curl = curl_init();
 curl_setopt ($curl, CURLOPT_URL, "http://launcher.worldofwarcraft.com/alert");
 curl_setopt($curl, CURLOPT_RETURNTRANSFER, 1);
+curl_setopt($curl, CURLOPT_BINARYTRANSFER, 1);
 
 $dataus = curl_exec ($curl);
 curl_close ($curl);
@@ -38,7 +40,7 @@ curl_close ($curl);
 if (strlen($dataus)<=1) { 
 echo "* There are no serveralerts at this time.".$thelink;
 } else {
-echo nl2br($dataus);
+echo ($dataus);
 }
 }
 
@@ -47,6 +49,7 @@ function de()
 $curl = curl_init();
 curl_setopt ($curl, CURLOPT_URL, "http://status.wow-europe.com/de/alert");
 curl_setopt($curl, CURLOPT_RETURNTRANSFER, 1);
+curl_setopt($curl, CURLOPT_BINARYTRANSFER, 1);
 
 $datade = curl_exec ($curl);
 curl_close ($curl);
@@ -55,7 +58,7 @@ curl_close ($curl);
 if (strlen($datade)<=1) { 
 echo "* Es gibt keine nachrichten in dieser zeit.".$thelink;
 } else {
-echo nl2br($datade);
+echo ($datade);
 }
 }
 
@@ -64,6 +67,7 @@ function ru()
 $curl = curl_init();
 curl_setopt ($curl, CURLOPT_URL, "http://status.wow-europe.com/ru/alert");
 curl_setopt($curl, CURLOPT_RETURNTRANSFER, 1);
+curl_setopt($curl, CURLOPT_BINARYTRANSFER, 1);
 
 $dataru = curl_exec ($curl);
 curl_close ($curl);
@@ -72,7 +76,7 @@ curl_close ($curl);
 if (strlen($dataru)<=1) { 
 echo "* Нет никаких новостей в это время.".$thelink;
 } else {
-echo nl2br($dataru);
+echo ($dataru);
 }
 }
 
@@ -81,6 +85,7 @@ function es()
 $curl = curl_init();
 curl_setopt ($curl, CURLOPT_URL, "http://status.wow-europe.com/es/alert");
 curl_setopt($curl, CURLOPT_RETURNTRANSFER, 1);
+curl_setopt($curl, CURLOPT_BINARYTRANSFER, 1);
 
 $dataes = curl_exec ($curl);
 curl_close ($curl);
@@ -89,7 +94,7 @@ curl_close ($curl);
 if (strlen($dataes)<=1) { 
 echo "* No hay ningunas noticias en este tiempo.".$thelink;
 } else {
-echo nl2br($dataes);
+echo ($dataes);
 }
 }
 
@@ -98,6 +103,7 @@ function fr()
 $curl = curl_init();
 curl_setopt ($curl, CURLOPT_URL, "http://status.wow-europe.com/fr/alert");
 curl_setopt($curl, CURLOPT_RETURNTRANSFER, 1);
+curl_setopt($curl, CURLOPT_BINARYTRANSFER, 1);
 
 $datafr = curl_exec ($curl);
 curl_close ($curl);
@@ -106,7 +112,7 @@ curl_close ($curl);
 if (strlen($datafr)<=1) { 
 echo "* Il n'y a aucune nouvelle à ce temps.".$thelink;
 } else {
-echo nl2br($datafr);
+echo ($datafr);
 }
 }
 

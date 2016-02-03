@@ -2,14 +2,14 @@
 === Plugin URI: http://www.fnaticstudios.se/wow-breaking-news/ ===
 === Description: World of Warcraft Breaking News Displaying Widget ===
 === Author: StoffeTiX ===
-=== Version: 1.6.1 ===
+=== Version: 1.7 ===
 === Author URI: http://www.fnaticstudios.se/ ===
 
 Contributors: StoffeTiX
-Donate link: http://www.fnaticstudios.se/donate/
+Donate link: http://donate.fnaticstudios.se/
 Tags: World of Warcraft, WoW
 Requires at least: 2.8
-Tested up to: 3.0
+Tested up to: 3.0.3
 Stable tag: trunk 
 
 == Description ==
@@ -69,6 +69,9 @@ None yet...
 1. A typical news message
 
 == Changelog ==
+
+= 1.7.0 =
+* Various tweakes due to changes from blizzards feeds.
 
 = 1.6.1 =
 * Compability check with WordPress 3.0, working just fine!
