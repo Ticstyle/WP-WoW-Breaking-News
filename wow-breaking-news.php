@@ -1,21 +1,31 @@
-<?php
-/*
+﻿<?php
+/*    This program is free software: you can redistribute it and/or modify
+      it under the terms of the GNU General Public License as published by
+      the Free Software Foundation, either version 3 of the License, or
+      (at your option) any later version.
+  
+      This program is distributed in the hope that it will be useful,
+      but WITHOUT ANY WARRANTY; without even the implied warranty of
+      MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+      GNU General Public License for more details.
+  
+      You should have received a copy of the GNU General Public License
+      along with this program.  If not, see <http://www.gnu.org/licenses/>.
+
+
 Plugin Name: WoW Breaking News
-Plugin URI: http://www.fnaticstudios.se/wow-breaking-news
+Plugin URI: http://www.tixdesign.com/wow-breaking-news
 Description: World of Warcraft Breaking News Displaying Widget
-Version: 1.6
 Author: StoffeTiX
-Author URI: http://www.fnaticstudios.se/
+Version: 1.5
+Author URI: http://www.tixdesign.com/
 */
 
 function eu()
 {
-$curl = curl_init();
-curl_setopt ($curl, CURLOPT_URL, "http://status.wow-europe.com/en/alert");
-curl_setopt($curl, CURLOPT_RETURNTRANSFER, 1);
-
-$dataeu = curl_exec ($curl);
-curl_close ($curl);
+$fpeu = fopen("http://status.wow-europe.com/en/alert", "r");
+$dataeu = fread($fpeu, 2000);
+fclose($fpeu);
 
 //Show if no news
 if (strlen($dataeu)<=1) { 
@@ -27,12 +37,9 @@ echo nl2br($dataeu);
 
 function us()
 {
-$curl = curl_init();
-curl_setopt ($curl, CURLOPT_URL, "http://launcher.worldofwarcraft.com/alert");
-curl_setopt($curl, CURLOPT_RETURNTRANSFER, 1);
-
-$dataus = curl_exec ($curl);
-curl_close ($curl);
+$fpus = fopen("http://launcher.worldofwarcraft.com/alert", "r");
+$dataus = fread($fpus, 2000);
+fclose($fpus);
 
 //Show if no news
 if (strlen($dataus)<=1) { 
@@ -44,12 +51,9 @@ echo nl2br($dataus);
 
 function de()
 {
-$curl = curl_init();
-curl_setopt ($curl, CURLOPT_URL, "http://status.wow-europe.com/de/alert");
-curl_setopt($curl, CURLOPT_RETURNTRANSFER, 1);
-
-$datade = curl_exec ($curl);
-curl_close ($curl);
+$fpde = fopen("http://status.wow-europe.com/de/alert", "r");
+$datade = fread($fpde, 2000);
+fclose($fpde);
 
 //Show if no news
 if (strlen($datade)<=1) { 
@@ -61,12 +65,9 @@ echo nl2br($datade);
 
 function ru()
 {
-$curl = curl_init();
-curl_setopt ($curl, CURLOPT_URL, "http://status.wow-europe.com/ru/alert");
-curl_setopt($curl, CURLOPT_RETURNTRANSFER, 1);
-
-$dataru = curl_exec ($curl);
-curl_close ($curl);
+$fpru = fopen("http://status.wow-europe.com/ru/alert", "r");
+$dataru = fread($fpru, 2000);
+fclose($fpru);
 
 //Show if no news
 if (strlen($dataru)<=1) { 
@@ -78,12 +79,9 @@ echo nl2br($dataru);
 
 function es()
 {
-$curl = curl_init();
-curl_setopt ($curl, CURLOPT_URL, "http://status.wow-europe.com/es/alert");
-curl_setopt($curl, CURLOPT_RETURNTRANSFER, 1);
-
-$dataes = curl_exec ($curl);
-curl_close ($curl);
+$fpes = fopen("http://status.wow-europe.com/es/alert", "r");
+$dataes = fread($fpes, 2000);
+fclose($fpes);
 
 //Show if no news
 if (strlen($dataes)<=1) { 
@@ -95,12 +93,9 @@ echo nl2br($dataes);
 
 function fr()
 {
-$curl = curl_init();
-curl_setopt ($curl, CURLOPT_URL, "http://status.wow-europe.com/fr/alert");
-curl_setopt($curl, CURLOPT_RETURNTRANSFER, 1);
-
-$datafr = curl_exec ($curl);
-curl_close ($curl);
+$fpfr = fopen("http://status.wow-europe.com/fr/alert", "r");
+$datafr = fread($fpfr, 2000);
+fclose($fpfr);
 
 //Show if no news
 if (strlen($datafr)<=1) { 
