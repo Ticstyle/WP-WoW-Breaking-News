@@ -1,11 +1,11 @@
 <?php
 /*
 Plugin Name: WoW Breaking News
-Plugin URI: http://www.fnaticstudios.se/wow-breaking-news
+Plugin URI: http://www.ticstyle.se/wow-breaking-news
 Description: World of Warcraft Breaking News Displaying Widget
-Version: 1.7
+Version: 1.8
 Author: StoffeTiX
-Author URI: http://www.fnaticstudios.se/
+Author URI: http://www.ticstyle.se/
 */
 
 function eu()

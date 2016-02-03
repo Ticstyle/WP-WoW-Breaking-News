@@ -1,15 +1,15 @@
 === WoW Breaking News ===
-=== Plugin URI: http://www.fnaticstudios.se/wow-breaking-news/ ===
+=== Plugin URI: http://www.ticstyle.se/wow-breaking-news/ ===
 === Description: World of Warcraft Breaking News Displaying Widget ===
 === Author: StoffeTiX ===
-=== Version: 1.7 ===
-=== Author URI: http://www.fnaticstudios.se/ ===
+=== Version: 1.8 ===
+=== Author URI: http://www.ticstyle.se/ ===
 
 Contributors: StoffeTiX
-Donate link: http://donate.fnaticstudios.se/
+Donate link: http://donate.ticstyle.se/
 Tags: World of Warcraft, WoW
 Requires at least: 2.8
-Tested up to: 3.0.3
+Tested up to: 3.2.1
 Stable tag: trunk 
 
 == Description ==
@@ -62,7 +62,7 @@ To change it to let's say Russian, edit the code to look like this:
 
 == Frequently Asked Questions ==
 
-None yet...
+Don't have any yet...
 
 == Screenshots ==
 
@@ -70,7 +70,10 @@ None yet...
 
 == Changelog ==
 
-= 1.7.0 =
+= 1.8 =
+* New version system and some updates to the contact information of this plugin.
+
+= 1.7 =
 * Various tweakes due to changes from blizzards feeds.
 
 = 1.6.1 =
