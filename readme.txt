@@ -2,7 +2,7 @@
 === Plugin URI: http://www.tixdesign.com/wow-breaking-news ===
 === Description: World of Warcraft Breaking News Displaying Widget ===
 === Author: StoffeTiX ===
-=== Version: 1.3 ===
+=== Version: 1.4 ===
 === Author URI: http://www.tixdesign.com/ ===
 
 Contributors: StoffeTiX
@@ -39,6 +39,9 @@ None yet...
 1. A typical message
 
 == Changelog ==
+
+= 1.4 =
+* Resolved a problem with saving and displaying a ne widget title.
 
 = 1.3 =
 * Added formating to the output message
