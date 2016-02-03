@@ -1,15 +1,15 @@
-=== WoW Breaking News ===
-=== Plugin URI: http://www.journeyofashaman.com/wow-breaking-news ===
+=== Plugin Name: WoW Breaking News ===
+=== Plugin URI: http://www.tixdesign.com/wow-breaking-news ===
 === Description: World of Warcraft Breaking News Displaying Widget ===
-=== Author: Stoffe Nilsson ===
-=== Version: 1.1 ===
-=== Author URI: http://www.journeyofashaman.com/ ===
+=== Author: StoffeTiX ===
+=== Version: 1.2 ===
+=== Author URI: http://www.tixdesign.com/ ===
 
-Contributors: Stoffe Nilsson
-Donate link: http://donate.journeyofashaman.com/
+Contributors: StoffeTiX
+Donate link: http://www.tixdesign.com/donate/
 Tags: World of Warcraft
 Requires at least: 2.8
-Tested up to: 2.8.3
+Tested up to: 2.9.1
 Stable tag: trunk 
 
 == Description ==
@@ -37,6 +37,9 @@ None yet...
 Comming soon...
 
 == Changelog ==
+
+1.2
+- Tested for Wordpress 2.9.1
 
 1.1
 - Added widget namechange option

@@ -14,11 +14,11 @@
 
 /*
 Plugin Name: WoW Breaking News
-Plugin URI: http://www.journeyofashaman.com/
+Plugin URI: http://www.tixdesign.com/wow-breaking-news
 Description: World of Warcraft Breaking News Displaying Widget
-Author: Stoffe Nilsson
+Author: StoffeTiX
 Version: 1.1
-Author URI: http://www.journeyofashaman.com/
+Author URI: http://www.tixdesign.com/
 */
 
 function samplewowbreakingnews()
