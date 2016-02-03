@@ -38,5 +38,9 @@ Comming soon...
 
 == Changelog ==
 
+1.1
+- Added widget namechange option
+- Inreased the amount of caracters allowed to show in the widget
+
 1.0
 - First release
