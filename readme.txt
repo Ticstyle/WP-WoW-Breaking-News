@@ -1,15 +1,16 @@
 === WoW Breaking News ===
-=== Plugin URI: http://www.ticstyle.se/wow-breaking-news/ ===
+=== Plugin URI: http://wow-breaking-news.ticstyle.se/ ===
 === Description: World of Warcraft Breaking News Displaying Widget ===
 === Author: StoffeTiX ===
-=== Version: 2.0 ===
+=== Version: 2.1 ===
 === Author URI: http://www.ticstyle.se/ ===
+=== License: GPL2 ===
 
 Contributors: StoffeTiX
 Donate link: http://donate.ticstyle.com/
 Tags: World of Warcraft, WoW
 Requires at least: 2.8
-Tested up to: 3.5.1
+Tested up to: 3.9.1
 Stable tag: trunk 
 
 == Description ==
@@ -77,6 +78,8 @@ Don't have any yet...
 1. A typical news message
 
 == Changelog ==
+
+= 2.1 =
 
 = 2.0 =
 * Added some server locations.
