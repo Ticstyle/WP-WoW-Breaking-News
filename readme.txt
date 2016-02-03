@@ -1,8 +1,8 @@
 === WoW Breaking News ===
-=== Plugin URI: http://www.tixdesign.com/wow-breaking-news ===
+=== Plugin URI: http://www.tixdesign.com/wow-breaking-news/ ===
 === Description: World of Warcraft Breaking News Displaying Widget ===
 === Author: StoffeTiX ===
-=== Version: 1.4 ===
+=== Version: 1.5 ===
 === Author URI: http://www.tixdesign.com/ ===
 
 Contributors: StoffeTiX
@@ -16,7 +16,7 @@ Stable tag: trunk
 
 This plugin will let you add a widget on your wordpress site displaying the in-game breaking news that you can se while logging in to World of Warcraft.
 
-(Only supports EU at the time)
+Supports EU, US, DE, RU, ES and FR Servers
 
 == Installation ==
 
@@ -30,6 +30,29 @@ Fast and easy.
 
 Done! 
 
+
+To edit realm location settings edit wow-breaking-news.php and find:
+
+    //Realm settings: (Default is eu)
+   	  eu(); //Europe (English)
+	//us(); //Unitead States (English)
+	//de(); //German
+	//ru(); //Russian
+	//es(); //Spanish
+	//fr(); //French
+
+Europe is in this case the choosen setting.
+
+To change it to let's say Russian, edit the code to look like this:
+
+    //Realm settings: (Default is eu)
+   	//eu(); //Europe (English)
+	//us(); //Unitead States (English)
+	//de(); //German
+	  ru(); //Russian
+	//es(); //Spanish
+	//fr(); //French
+
 == Frequently Asked Questions ==
 
 None yet...
@@ -39,6 +62,9 @@ None yet...
 1. A typical message
 
 == Changelog ==
+
+= 1.5 =
+* Added the possability to change server location i.e. EU server, US Server, DE Server, RU Server, ES Server and FR Server.
 
 = 1.4 =
 * Resolved a problem with saving and displaying a ne widget title.
