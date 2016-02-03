@@ -1,4 +1,4 @@
-﻿<?php
+<?php
 /*    This program is free software: you can redistribute it and/or modify
       it under the terms of the GNU General Public License as published by
       the Free Software Foundation, either version 3 of the License, or
@@ -17,91 +17,21 @@ Plugin Name: WoW Breaking News
 Plugin URI: http://www.tixdesign.com/wow-breaking-news
 Description: World of Warcraft Breaking News Displaying Widget
 Author: StoffeTiX
-Version: 1.5
+Version: 1.4
 Author URI: http://www.tixdesign.com/
 */
 
-function eu()
+function samplewowbreakingnews()
 {
-$fpeu = fopen("http://status.wow-europe.com/en/alert", "r");
-$dataeu = fread($fpeu, 2000);
-fclose($fpeu);
+$fp = fopen("http://status.wow-europe.com/en/alert", "r");
+$data = fread($fp, 2000);
+fclose($fp);
 
 //Show if no news
-if (strlen($dataeu)<=1) { 
+if (strlen($data)<=1) { 
 echo "* There are no serveralerts at this time.".$thelink;
 } else {
-echo nl2br($dataeu);
-}
-}
-
-function us()
-{
-$fpus = fopen("http://launcher.worldofwarcraft.com/alert", "r");
-$dataus = fread($fpus, 2000);
-fclose($fpus);
-
-//Show if no news
-if (strlen($dataus)<=1) { 
-echo "* There are no serveralerts at this time.".$thelink;
-} else {
-echo nl2br($dataus);
-}
-}
-
-function de()
-{
-$fpde = fopen("http://status.wow-europe.com/de/alert", "r");
-$datade = fread($fpde, 2000);
-fclose($fpde);
-
-//Show if no news
-if (strlen($datade)<=1) { 
-echo "* Es gibt keine nachrichten in dieser zeit.".$thelink;
-} else {
-echo nl2br($datade);
-}
-}
-
-function ru()
-{
-$fpru = fopen("http://status.wow-europe.com/ru/alert", "r");
-$dataru = fread($fpru, 2000);
-fclose($fpru);
-
-//Show if no news
-if (strlen($dataru)<=1) { 
-echo "* Нет никаких новостей в это время.".$thelink;
-} else {
-echo nl2br($dataru);
-}
-}
-
-function es()
-{
-$fpes = fopen("http://status.wow-europe.com/es/alert", "r");
-$dataes = fread($fpes, 2000);
-fclose($fpes);
-
-//Show if no news
-if (strlen($dataes)<=1) { 
-echo "* No hay ningunas noticias en este tiempo.".$thelink;
-} else {
-echo nl2br($dataes);
-}
-}
-
-function fr()
-{
-$fpfr = fopen("http://status.wow-europe.com/fr/alert", "r");
-$datafr = fread($fpfr, 2000);
-fclose($fpfr);
-
-//Show if no news
-if (strlen($datafr)<=1) { 
-echo "* Il n'y a aucune nouvelle à ce temps.".$thelink;
-} else {
-echo nl2br($datafr);
+echo nl2br($data);
 }
 }
 
@@ -121,14 +51,8 @@ function widget_wowbreakingnews($args) {
       echo $options['title'];
     echo $after_title;
 
-    //Realm location settings: (Default is eu)
-	  eu(); //Europe (English)
-	//us(); //Unitead States (English)
-	//de(); //German
-	//ru(); //Russian
-	//es(); //Spanish
-	//fr(); //French	
-	
+    //Widget Content
+    samplewowbreakingnews();
   echo $after_widget;
 }
 
