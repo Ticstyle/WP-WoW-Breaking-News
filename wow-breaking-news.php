@@ -17,20 +17,21 @@ Plugin Name: WoW Breaking News
 Plugin URI: http://www.tixdesign.com/wow-breaking-news
 Description: World of Warcraft Breaking News Displaying Widget
 Author: StoffeTiX
-Version: 1.1
+Version: 1.3
 Author URI: http://www.tixdesign.com/
 */
 
 function samplewowbreakingnews()
 {
 $fp = fopen("http://status.wow-europe.com/en/alert", "r");
-$data = fread($fp, 1000);
+$data = fread($fp, 2000);
 fclose($fp);
 
+//Show if no news
 if (strlen($data)<=1) { 
-echo "* There are no alerts at this time.".$thelink;
+echo "* There are no serveralerts at this time.".$thelink;
 } else {
-echo $data;
+echo nl2br($data);
 }
 }
 
