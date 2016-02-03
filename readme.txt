@@ -2,21 +2,21 @@
 === Plugin URI: http://www.ticstyle.se/wow-breaking-news/ ===
 === Description: World of Warcraft Breaking News Displaying Widget ===
 === Author: StoffeTiX ===
-=== Version: 1.8 ===
+=== Version: 2.0 ===
 === Author URI: http://www.ticstyle.se/ ===
 
 Contributors: StoffeTiX
-Donate link: http://donate.ticstyle.se/
+Donate link: http://donate.ticstyle.com/
 Tags: World of Warcraft, WoW
 Requires at least: 2.8
-Tested up to: 3.2.1
+Tested up to: 3.5.1
 Stable tag: trunk 
 
 == Description ==
 
 This plugin will let you add a widget on your wordpress site displaying the in-game breaking news that you can se while logging in to World of Warcraft.
 
-Supports EU, US, DE, RU, ES and FR Servers
+Supports EU, US, DE, RU, ES, FR, BR, TW, CN and KR Servers
 
 == Installation ==
 
@@ -32,7 +32,7 @@ Done!
 
 == Upgrade Notice ==
 
-To upgrade to a new version deactivate the plugin and click upgrade automatically, then just reactivate it.
+After an update you need to change your realm location settings again if you are on any other realm location than europe
 
 Done!
 
@@ -40,25 +40,33 @@ Done!
 
 To edit realm location settings edit wow-breaking-news.php and find:
 
-    //Realm settings: (Default is eu)
-   	  eu(); //Europe (English)
-	//us(); //Unitead States (English)
+    //Realm location settings: (Default is eu)
+	  eu(); //Europe (English)
+	//us(); //Unitead States & Australia (English)
 	//de(); //German
 	//ru(); //Russian
 	//es(); //Spanish
-	//fr(); //French
+	//fr(); //French	
+	//br(); //Portuguese
+	//tw(); //Taiwanese
+	//cn(); //Chinese
+	//kr(); //Korean
 
 Europe is in this case the choosen setting.
 
 To change it to let's say Russian, edit the code to look like this:
 
-    //Realm settings: (Default is eu)
-   	//eu(); //Europe (English)
-	//us(); //Unitead States (English)
+    //Realm location settings: (Default is eu)
+	//eu(); //Europe (English)
+	//us(); //Unitead States & Australia (English)
 	//de(); //German
 	  ru(); //Russian
 	//es(); //Spanish
-	//fr(); //French
+	//fr(); //French	
+	//br(); //Portuguese
+	//tw(); //Taiwanese
+	//cn(); //Chinese
+	//kr(); //Korean
 
 == Frequently Asked Questions ==
 
@@ -69,6 +77,9 @@ Don't have any yet...
 1. A typical news message
 
 == Changelog ==
+
+= 2.0 =
+* Added some server locations.
 
 = 1.8 =
 * New version system and some updates to the contact information of this plugin.

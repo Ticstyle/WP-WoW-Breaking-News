@@ -3,7 +3,7 @@
 Plugin Name: WoW Breaking News
 Plugin URI: http://www.ticstyle.se/wow-breaking-news
 Description: World of Warcraft Breaking News Displaying Widget
-Version: 1.8
+Version: 2.0
 Author: StoffeTiX
 Author URI: http://www.ticstyle.se/
 */
@@ -20,9 +20,81 @@ curl_close ($curl);
 
 //Show if no news
 if (strlen($dataeu)<=1) { 
-echo "* There are no serveralerts at this time.".$thelink;
+echo "* There are no server alerts at this time.".$thelink;
 } else {
 echo ($dataeu);
+}
+}
+
+function kr()
+{
+$curl = curl_init();
+curl_setopt ($curl, CURLOPT_URL, "http://launcher.worldofwarcraft.co.kr/alert");
+curl_setopt($curl, CURLOPT_RETURNTRANSFER, 1);
+curl_setopt($curl, CURLOPT_BINARYTRANSFER, 1);
+
+$datakr = curl_exec ($curl);
+curl_close ($curl);
+
+//Show if no news
+if (strlen($datakr)<=1) { 
+echo "* 현재도 서버 알림이 없습니다.".$thelink;
+} else {
+echo ($datakr);
+}
+}
+
+function cn()
+{
+$curl = curl_init();
+curl_setopt ($curl, CURLOPT_URL, "http://launcher.battlenet.com.cn/alert");
+curl_setopt($curl, CURLOPT_RETURNTRANSFER, 1);
+curl_setopt($curl, CURLOPT_BINARYTRANSFER, 1);
+
+$datacn = curl_exec ($curl);
+curl_close ($curl);
+
+//Show if no news
+if (strlen($datacn)<=1) { 
+echo "* 在这个时候有没有服务器警报.".$thelink;
+} else {
+echo ($datacn);
+}
+}
+
+function tw()
+{
+$curl = curl_init();
+curl_setopt ($curl, CURLOPT_URL, "http://launcher.wowtaiwan.com.tw/alert");
+curl_setopt($curl, CURLOPT_RETURNTRANSFER, 1);
+curl_setopt($curl, CURLOPT_BINARYTRANSFER, 1);
+
+$datatw = curl_exec ($curl);
+curl_close ($curl);
+
+//Show if no news
+if (strlen($datatw)<=1) { 
+echo "* 在這個時候有沒有服務器警報.".$thelink;
+} else {
+echo ($datatw);
+}
+}
+
+function br()
+{
+$curl = curl_init();
+curl_setopt ($curl, CURLOPT_URL, "http://launcher.worldofwarcraft.com/pt/alert");
+curl_setopt($curl, CURLOPT_RETURNTRANSFER, 1);
+curl_setopt($curl, CURLOPT_BINARYTRANSFER, 1);
+
+$databr = curl_exec ($curl);
+curl_close ($curl);
+
+//Show if no news
+if (strlen($databr)<=1) { 
+echo "* Não há alertas do servidor neste momento.".$thelink;
+} else {
+echo ($databr);
 }
 }
 
@@ -38,7 +110,7 @@ curl_close ($curl);
 
 //Show if no news
 if (strlen($dataus)<=1) { 
-echo "* There are no serveralerts at this time.".$thelink;
+echo "* There are no server alerts at this time.".$thelink;
 } else {
 echo ($dataus);
 }
@@ -134,11 +206,15 @@ function widget_wowbreakingnews($args) {
 
     //Realm location settings: (Default is eu)
 	  eu(); //Europe (English)
-	//us(); //Unitead States (English)
+	//us(); //Unitead States & Australia (English)
 	//de(); //German
 	//ru(); //Russian
 	//es(); //Spanish
 	//fr(); //French	
+	//br(); //Portuguese
+	//tw(); //Taiwanese
+	//cn(); //Chinese
+	//kr(); //Korean
 	
   echo $after_widget;
 }
