@@ -1,15 +1,15 @@
 === WoW Breaking News ===
-=== Plugin URI: http://www.tixdesign.com/wow-breaking-news/ ===
+=== Plugin URI: http://www.fnaticstudios.se/wow-breaking-news/ ===
 === Description: World of Warcraft Breaking News Displaying Widget ===
 === Author: StoffeTiX ===
-=== Version: 1.5 ===
-=== Author URI: http://www.tixdesign.com/ ===
+=== Version: 1.6 ===
+=== Author URI: http://www.fnaticstudios.se/ ===
 
 Contributors: StoffeTiX
-Donate link: http://www.tixdesign.com/donate/
+Donate link: http://www.fnaticstudios.se/donate/
 Tags: World of Warcraft, WoW
 Requires at least: 2.8
-Tested up to: 2.9.1
+Tested up to: 3.0 RC3
 Stable tag: trunk 
 
 == Description ==
@@ -30,6 +30,13 @@ Fast and easy.
 
 Done! 
 
+== Upgrade Notice ==
+
+To upgrade to a new version deactivate the plugin and click upgrade automatically, then just reactivate it.
+
+Done!
+
+== Changing Realm ==
 
 To edit realm location settings edit wow-breaking-news.php and find:
 
@@ -59,9 +66,12 @@ None yet...
 
 == Screenshots ==
 
-1. A typical message
+1. A typical news message
 
 == Changelog ==
+
+= 1.6 =
+* Swapping of some coding stuff to be more compatilbe.
 
 = 1.5 =
 * Added the possability to change server location i.e. EU server, US Server, DE Server, RU Server, ES Server and FR Server.
